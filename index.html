@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <title>Query and plug</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
@@ -25,24 +25,23 @@
 <div style="text-align: center; margin-top: 20px;">
   <p>Оберіть дату: <input type="text" id="datepicker"></p>
 </div>
- <script src="js/jquery-4.0.0.js"></script>
+ <script src="jquery-4.0.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-
-    <script>
-      $( function() {
-      
+<script>
+    
         $( "h1" ).draggable({ axis: "x" }); 
-        
-        
+    
         $( "#accordion" ).accordion({
           collapsible: true,
           active: false
         });
         
-        
         $( "#datepicker" ).datepicker({
           dateFormat: "dd-mm-yy"
         });
+      } );
+    </script>
+    
       } );
     </script>
     
