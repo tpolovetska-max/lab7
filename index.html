@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <title>Query and plug</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+
+    <h1>Draggable</h1>
+ <div id="accordion" style="width: 80%; margin: 20px auto;">
+  <h3>Що таке jQuery UI?</h3>
+  <div>
+    <p>Це бібліотека інструментів для інтерфейсу користувача.</p>
+  </div>
+  <h3>Навіщо це потрібно?</h3>
+  <div>
+    <p>Щоб робити сторінки інтерактивними, як цей акордеон.</p>
+  </div>
+
+
+<div style="text-align: center; margin-top: 20px;">
+  <p>Оберіть дату: <input type="text" id="datepicker"></p>
+</div>
+ <script src="js/jquery-4.0.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+      $( function() {
+      
+        $( "h1" ).draggable({ axis: "x" }); 
+        
+        
+        $( "#accordion" ).accordion({
+          collapsible: true,
+          active: false
+        });
+        
+        
+        $( "#datepicker" ).datepicker({
+          dateFormat: "dd-mm-yy"
+        });
+      } );
+    </script>
+    
+</body>
+</html>
